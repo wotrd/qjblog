@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/mine/mine",
-    "pages/aboutUs/aboutUs"
+    "pages/aboutUs/aboutUs",
+    "pages/feedBack/feedBack"
   ],
   "permission": {
     "scope.userLocation": {

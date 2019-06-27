@@ -23,7 +23,7 @@
 
 .seperate_line {
     width: 100%;
-    height: 20px;
+    height: 10px;
 }
 
 .mine_item {

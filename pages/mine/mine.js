@@ -8,13 +8,22 @@ Page({
         hasUserInfo: false,
         canIUse: wx.canIUse('button.open-type.getUserInfo'),
         aboutUsUrl: '../../assets/img/about_us.png',
+        feedBackUrl: '../../assets/img/feed_back.png',
         rightImgUrl: '../../assets/img/icon_right.png'
     },
-    //事件处理函数
-    bindAvatarTap: function () {
+    //绑定关于我们
+    bindAboutUsTap: function () {
 
         wx.navigateTo({
             url: '../aboutUs/aboutUs'
+        })
+
+    },
+    //绑定意见反馈
+    bindFeedBackTap: function () {
+
+        wx.navigateTo({
+            url: '../feedBack/feedBack'
         })
 
     },
@@ -51,7 +60,6 @@ Page({
         }
     },
     getUserInfo: function (e) {
-
 
         app.globalData.userInfo = e.detail.userInfo;
         this.setData({

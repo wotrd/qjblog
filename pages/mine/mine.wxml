@@ -14,7 +14,17 @@
 
     <view class="seperate_line"></view>
 
-    <view class="mine_item" bindtap='bindAvatarTap'>
+    <view class="mine_item" bindtap='bindFeedBackTap'>
+
+        <image class="mine_left_icon" src="{{feedBackUrl}}" mode="cover"></image>
+        <text class="mine_item_text">意见反馈</text>
+        <image class="mine_right_icon" src="{{rightImgUrl}}" mode="cover"></image>
+
+    </view>
+
+    <view class="seperate_line"></view>
+
+    <view class="mine_item" bindtap='bindAboutUsTap'>
 
             <image class="mine_left_icon" src="{{aboutUsUrl}}" mode="cover"></image>
             <text class="mine_item_text">关于我们</text>
