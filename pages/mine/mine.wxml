@@ -1,0 +1,25 @@
+<!--mine.wxml-->
+<view class="container" xmlns:wx="http://www.w3.org/1999/xhtml">
+    <view class="userinfo">
+        <block wx:if="{{!hasUserInfo && canIUse}}">
+            <image bindtap="bindViewTap" class="userinfo-avatar" src="{{avatarUrl}}" mode="cover"></image>
+            <button size="mini" class="userinfo-nickname" open-type="getUserInfo" bindgetuserinfo="getUserInfo">请点击登录
+            </button>
+        </block>
+        <block wx:else>
+            <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+            <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+        </block>
+    </view>
+
+    <view class="seperate_line"></view>
+
+    <view class="mine_item" bindtap='bindAvatarTap'>
+
+            <image class="mine_left_icon" src="{{aboutUsUrl}}" mode="cover"></image>
+            <text class="mine_item_text">关于我们</text>
+            <image class="mine_right_icon" src="{{rightImgUrl}}" mode="cover"></image>
+
+    </view>
+
+</view>

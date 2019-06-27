@@ -1,0 +1,56 @@
+/**mine.wxss**/
+
+.userinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    width: 100%;
+}
+
+.userinfo-avatar {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.userinfo-nickname {
+    color: #aaa;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.seperate_line {
+    width: 100%;
+    height: 20px;
+}
+
+.mine_item {
+    width: 100%;
+    height: 50px;
+    display:block;
+    background-color: #fff;
+}
+
+.mine_left_icon {
+    width: 25px;
+    height: 25px;
+    margin-top: 12px;
+    margin-left: 10px;
+}
+
+.mine_item_text {
+    margin-left: 10px;
+    color: #aaa;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.mine_right_icon {
+    width: 25px;
+    height: 25px;
+    margin-top: 12px;
+    margin-right: 10px;
+    float: right;
+}
